@@ -87,5 +87,6 @@ names(complete_data) <- new_data_cnames
 
 second_tidy_set <- complete_data %>%
   group_by(Activities, Subject) %>%
-  summarise_at(vars(1:66), mean)
+  summarise_at(vars(1:66), mean) %>%
+  write_csv(./"UCI HAR Dataset/Tidy Data Submission.csv")
 
