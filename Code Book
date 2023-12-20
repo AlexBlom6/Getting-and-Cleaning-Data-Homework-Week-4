@@ -1,0 +1,84 @@
+# Code Book #
+
+## Original Data ##
+This analyziation is based on the Features Selection, Features, and Activity Label files in the original files from the researcher's raw data.
+
+## Columns ##
+[1] "Activities" : string values (Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, & Laying)                                                                                 
+ [2] "Subject"   : numeric identifier (1-30)                                                                                   
+ [3] "Time Body Acceleration-mean-x Axial Direction"  : The average of all "Time Body Acceleration-mean-x Axial Direction" figures within the unique combination of "Activities" and "Subject" (This applies to the rest of the columns below as well)                                               
+ [4] "Time Body Acceleration-mean-y Axial Direction"                                                 
+ [5] "Time Body Acceleration-mean-z Axial Direction"                                                 
+ [6] "Time Gravity Acceleration-mean-x Axial Direction"                                              
+ [7] "Time Gravity Acceleration-mean-y Axial Direction"                                              
+ [8] "Time Gravity Acceleration-mean-z Axial Direction"                                              
+ [9] "Time Body Acceleration Jerk Signals-mean-x Axial Direction"                                    
+[10] "Time Body Acceleration Jerk Signals-mean-y Axial Direction"                                    
+[11] "Time Body Acceleration Jerk Signals-mean-z Axial Direction"                                    
+[12] "Time Body Gyroscope-mean-x Axial Direction"                                                    
+[13] "Time Body Gyroscope-mean-y Axial Direction"                                                    
+[14] "Time Body Gyroscope-mean-z Axial Direction"                                                    
+[15] "Time Body Gyroscope Jerk Signals-mean-x Axial Direction"                                       
+[16] "Time Body Gyroscope Jerk Signals-mean-y Axial Direction"                                       
+[17] "Time Body Gyroscope Jerk Signals-mean-z Axial Direction"                                       
+[18] "Time Body Acceleration Euclidean Norm-mean"                                                    
+[19] "Time Gravity Acceleration Euclidean Norm-mean"                                                 
+[20] "Time Body Acceleration Jerk Signals Euclidean Norm-mean"                                       
+[21] "Time Body Gyroscope Euclidean Norm-mean"                                                       
+[22] "Time Body Gyroscope Jerk Signals Euclidean Norm-mean"                                          
+[23] "Frequency Domain Signals Body Acceleration-mean-x Axial Direction"                             
+[24] "Frequency Domain Signals Body Acceleration-mean-y Axial Direction"                             
+[25] "Frequency Domain Signals Body Acceleration-mean-z Axial Direction"                             
+[26] "Frequency Domain Signals Body Acceleration Jerk Signals-mean-x Axial Direction"                
+[27] "Frequency Domain Signals Body Acceleration Jerk Signals-mean-y Axial Direction"                
+[28] "Frequency Domain Signals Body Acceleration Jerk Signals-mean-z Axial Direction"                
+[29] "Frequency Domain Signals Body Gyroscope-mean-x Axial Direction"                                
+[30] "Frequency Domain Signals Body Gyroscope-mean-y Axial Direction"                                
+[31] "Frequency Domain Signals Body Gyroscope-mean-z Axial Direction"                                
+[32] "Frequency Domain Signals Body Acceleration Euclidean Norm-mean"                                
+[33] "Frequency Domain Signals Body Body Acceleration Jerk Signals Euclidean Norm-mean"              
+[34] "Frequency Domain Signals Body Body Gyroscope Euclidean Norm-mean"                              
+[35] "Frequency Domain Signals Body Body Gyroscope Jerk Signals Euclidean Norm-mean"                 
+[36] "Time Body Acceleration-Standard Deviation-x Axial Direction"                                   
+[37] "Time Body Acceleration-Standard Deviation-y Axial Direction"                                   
+[38] "Time Body Acceleration-Standard Deviation-z Axial Direction"                                   
+[39] "Time Gravity Acceleration-Standard Deviation-x Axial Direction"                                
+[40] "Time Gravity Acceleration-Standard Deviation-y Axial Direction"                                
+[41] "Time Gravity Acceleration-Standard Deviation-z Axial Direction"                                
+[42] "Time Body Acceleration Jerk Signals-Standard Deviation-x Axial Direction"                      
+[43] "Time Body Acceleration Jerk Signals-Standard Deviation-y Axial Direction"                      
+[44] "Time Body Acceleration Jerk Signals-Standard Deviation-z Axial Direction"                      
+[45] "Time Body Gyroscope-Standard Deviation-x Axial Direction"                                      
+[46] "Time Body Gyroscope-Standard Deviation-y Axial Direction"                                      
+[47] "Time Body Gyroscope-Standard Deviation-z Axial Direction"                                      
+[48] "Time Body Gyroscope Jerk Signals-Standard Deviation-x Axial Direction"                         
+[49] "Time Body Gyroscope Jerk Signals-Standard Deviation-y Axial Direction"                         
+[50] "Time Body Gyroscope Jerk Signals-Standard Deviation-z Axial Direction"                         
+[51] "Time Body Acceleration Euclidean Norm-Standard Deviation"                                      
+[52] "Time Gravity Acceleration Euclidean Norm-Standard Deviation"                                   
+[53] "Time Body Acceleration Jerk Signals Euclidean Norm-Standard Deviation"                         
+[54] "Time Body Gyroscope Euclidean Norm-Standard Deviation"                                         
+[55] "Time Body Gyroscope Jerk Signals Euclidean Norm-Standard Deviation"                            
+[56] "Frequency Domain Signals Body Acceleration-Standard Deviation-x Axial Direction"               
+[57] "Frequency Domain Signals Body Acceleration-Standard Deviation-y Axial Direction"               
+[58] "Frequency Domain Signals Body Acceleration-Standard Deviation-z Axial Direction"               
+[59] "Frequency Domain Signals Body Acceleration Jerk Signals-Standard Deviation-x Axial Direction"  
+[60] "Frequency Domain Signals Body Acceleration Jerk Signals-Standard Deviation-y Axial Direction"  
+[61] "Frequency Domain Signals Body Acceleration Jerk Signals-Standard Deviation-z Axial Direction"  
+[62] "Frequency Domain Signals Body Gyroscope-Standard Deviation-x Axial Direction"                  
+[63] "Frequency Domain Signals Body Gyroscope-Standard Deviation-y Axial Direction"                  
+[64] "Frequency Domain Signals Body Gyroscope-Standard Deviation-z Axial Direction"                  
+[65] "Frequency Domain Signals Body Acceleration Euclidean Norm-Standard Deviation"                  
+[66] "Frequency Domain Signals Body Body Acceleration Jerk Signals Euclidean Norm-Standard Deviation"
+[67] "Frequency Domain Signals Body Body Gyroscope Euclidean Norm-Standard Deviation"                
+[68] "Frequency Domain Signals Body Body Gyroscope Jerk Signals Euclidean Norm-Standard Deviation" 
+
+## Details ##
+The raw data comes from either one of two pieces of equipment: 1) accelerator or 2) gyroscope. The column name will detail how these measurements were originally seperated and analyzed (ex: the original data points were calculated into either a mean or a standard deviation, 
+if the accelerator signal was a body or gravity signal etc). 
+Since these data are grouped by unique combination of the "Activities" and "Subject", these current columns calculate the average of the original raw data calculations per unique grouping. Therefore, using "Time Body Acceleration-mean-x Axial Direction"  as an example,
+this column takes the average of all of the original outputs that are in the same Activity/Subject grouping. 
+
+## Units ##
+time was originally captured at a constant 50 Hz
+frequency was originally captured at 20 Hz for noise removal and again at 0.3 HZ for the acceleration's body and gravity signals
