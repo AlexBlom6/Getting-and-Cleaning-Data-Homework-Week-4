@@ -27,8 +27,8 @@ This document edits the original code book used to reflect the changes made duri
 
 
 
-#### Index ####
-## Original ReadMe for the documents analyzed in the files in this Repo ##
+## Index ##
+# Original ReadMe for the documents analyzed in the files in this Repo #
 
 
 ==================================================================
